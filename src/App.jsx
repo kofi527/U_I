@@ -1,15 +1,17 @@
 import './index.css';
 import Navbar from './components/Navbar';
+import AddEmployee from './components/AddEmployee';
 
 function App() {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen bg-gray-50">
       <Navbar />
-      <div>
-        <h1 className="font-bold underline text-black">HELLO kenny that is fine job WORLD</h1>
-        <button className="rounded-full bg-red-600 px-6 py-2 text-black font-bold">Subscribe</button>
+      
+      <div className="mt-8">
+        <AddEmployee />
       </div>
     </div>
+     
   );
 }
 
